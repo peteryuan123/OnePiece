@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <opencv/cv.h>
+#include <opencv2/imgproc.hpp>
 #include <opencv2/opencv.hpp>
 #include "mild.hpp"
 namespace MILD

@@ -4,6 +4,7 @@
 #include "Geometry/KDTree.h"
 #include "Tool/ConsoleColor.h"
 #include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui_c.h>
 namespace one_piece
 {
 namespace algorithm

@@ -20,7 +20,7 @@ namespace tool
     }
     void Convert2Gray(const cv::Mat &source, cv::Mat &target)
     {
-        cv::cvtColor(source, target, CV_RGB2GRAY);
+        cv::cvtColor(source, target, cv::COLOR_RGB2GRAY);
     }
     void SobelFiltering(const cv::Mat &source, cv::Mat &target, char type)
     {

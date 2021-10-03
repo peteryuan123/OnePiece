@@ -11,7 +11,7 @@ find_package(GLEW REQUIRED)
 find_package(OpenCV REQUIRED)
 
 # optional
-find_package(OpenNI2)
+# find_package(OpenNI2)
 
 add_subdirectory(3rdparty/Pangolin)
 

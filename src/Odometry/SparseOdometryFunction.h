@@ -115,7 +115,7 @@ namespace odometry
 
             //find homography matrix and get inliers mask
             std::vector<uchar> inlier_mask(source_points.size());
-            cv::findHomography(source_points, target_points, CV_FM_RANSAC, REPROJECTION_ERROR_2D_THRESHOLD, inlier_mask);
+            cv::findHomography(source_points, target_points, cv::RANSAC, REPROJECTION_ERROR_2D_THRESHOLD, inlier_mask);
 
             std::vector<cv::DMatch> inliers;
             for (size_t i = 0; i < inlier_mask.size(); i++){
