@@ -1,9 +1,13 @@
 cmake_minimum_required(VERSION 3.1)
+project(OnePiece)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}")
 set (CMAKE_BUILD_TYPE "Release")
-set (CMAKE_BINARY_DIR "./example")
-
+#set (CMAKE_BINARY_DIR "./example")
+set(CMAKE_BINARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/example")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+if (POLICY CMP0072)
+  set(OpenGL_GL_PREFERENCE LEGACY)
+endif()
 
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
